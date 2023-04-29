@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddToCart</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <style>
+        #header {
+        height: 50px;
+        width: 100%;
+        /* border:2px solid red; */
+        background-color: #2874f0;
+        display: flex;
+      }
+      #headOne {
+        height: 50px;
+        width: 50%;
+        /* border:2px solid black; */
+        margin: auto;
+        display: flex;
+        padding-left: 15%;
+        line-height: 0%;
+        margin-right: 5%;
+      }
+      #headOne > #headOneO {
+        height: auto;
+        width: 20%;
+        /* border:5px solid red; */
+        padding-top: 0%;
+        padding: 0%;
+        margin-top: 1%;
+      }
+      #headOneO>a>img {
+        width: 70%;
+        padding: 10px;
+      }
+      /* #plus>img{
+            width:10%;
+        } */
+      #search {
+        height: 80%;
+        width: 90%;
+        background-color: white;
+        margin: auto;
+        display: flex;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        /* justify-content: space-between; */
+      }
+      #search > input {
+        height: 80%;
+        width: 90%;
+        margin: auto;
+        border: none;
+        justify-content: space-between;
+      }
+      #addtoCart>a{
+        text-decoration: none;
+        color:white;
+      }
+      .fa-magnifying-glass {
+        
+        margin-top: 3%;
+        margin-right: 5%;
+      }
+      #headTwo {
+        height: 100%;
+        width: 50%;
+        /* border:2px solid black; */
+        margin: auto;
+      }
+
+      #headTwo {
+        height: 100%;
+        width: 40%;
+        /* border:5px solid green; */
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: white;
+        margin-right: 15%;
+      }
+     #login>a>button {
+        font-size: 16px;
+        width: 150%;
+        padding: 8px;
+        background-color: white;
+        margin-top: 11%;
+        color: #2874f0;
+        border: none;
+      }
+
+
+      #Flipkart_item {
+        height: 120px;
+        width: 100%;
+        margin: auto;
+        border: 2px solid red;
+      }
+      #Flipkart_item_box {
+        height: 100%;
+        width: 75%;
+        margin: auto;
+        border: 2px solid green;
+        display: flex;
+      }
+      .offers {
+        height: 100px;
+        width: 10%;
+        border: 2px solid red;
+        text-align: center;
+        line-height: 0%;
+        margin-top: 1%;
+      }
+      .offers > img {
+        width: 100%;
+        height: 50%;
+      }
+
+      #box{
+        height:800px;
+        width:80%;
+       
+        margin: auto;
+        margin-top:2%;
+        display:flex;
+       }
+       #address{
+        height:100%;
+        width:60%;
+       
+       }
+       #add{
+        height:60px;
+        width:100%;
+        border: 1px solid gainsboro;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+       #add button{
+        height:50px;
+        width:100px;
+        background-color: aliceblue;
+        color:blue;
+        border:none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius:2px;
+       }
+       #new{
+        font-weight: bold;
+
+       }
+       #box2{
+        height:auto;
+        width:100%;
+        border:2px solid red;
+        /* border: 1px solid gainsboro; */
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+     
+       #box2 img{
+        width:30%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+
+       #price{
+        height:300px;
+        width:40%;
+        border: 1px solid gainsboro;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-left:2%;
+       }
+       #submit{
+        width:150px;
+        height:50px;
+        background-color: rgb(255, 106, 0);
+        color:white;
+        border: none;
+        margin-left: 1%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+       #cart_total{
+        border:2px solid red;
+       }
+    </style>
+</head>
+<body>
+    <div id="header">
+       
+      </div>
+    
+      <!-- addToCart container -->
+
+      <div id="box">
+        <div id="address">
+        <div id="add">
+            <div>
+                <p>&nbsp&nbspDeliver to <span id="new">Manas Prasad ,835223</span></p>
+                <p>&nbsp&nbsp77,Gulzar Gali Simdega,Jharkhand</p>
+            </div>
+           <div>
+            <button>change</button>
+           </div>
+            
+        </div>
+    
+    
+         <!-- cart -->
+        
+        <div id="box2"></div>
+    
+    
+    </div>
+    <div id="price" ><br>
+    
+        <h3>Price Details</h3>
+        <hr>
+        <br>
+        <br>
+        <h2 id="cart_total">Total Price:</h2><br>
+        <button id="submit" onclick="checkout()">place order</button>
+    </div>
+</body>
+</html>
+<script type="module" src="./addtocart.js"></script>
